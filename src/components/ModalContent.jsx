@@ -11,10 +11,10 @@ export default function ModalContent({country, closeModal}) {
         className='min-w-[500px] relative rounded p-7 bg-gray-50'>
             <button 
             onClick={closeModal}
-            className='absolute top-2 right-1 w-8 h-8 flex items-center justify-center text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded'>
+            className='absolute top-2 right-3 w-8 h-8 flex items-center justify-center text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded'>
                 X
             </button>
-            <h2 className="text-2xl mb-4">Here is {country.name.common}'s informations</h2>
+            <h2 className="text-2xl mt-5 mb-4">Here is {country.name.common}'s informations</h2>
             <p className="text-lg mb-2">
                 <span className='font-semibold'>Language(s)</span>
                 : {Object.entries(country.languages).map(lang => lang[1] + " ")}
